@@ -1,0 +1,13 @@
+<body>
+  <form (ngSubmit)="updatePost()">
+    <h1>UPDATE POST</h1>
+    <label for="title">Title:</label>
+    <input type="text" [(ngModel)]="post.title" name="title" required>
+  
+    <label for="content">Content:</label>
+    <textarea [(ngModel)]="post.content" name="content" required></textarea>
+  
+    <button type="submit">Update Post</button>
+     
+  </form>
+</body>

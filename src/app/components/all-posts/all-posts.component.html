@@ -1,0 +1,14 @@
+<body>
+    <h1>All Posts</h1>
+    <a [routerLink]="['/post/new']">Create New Post</a>
+    <div *ngIf="allPostsList">
+        <div *ngFor="let post of allPostsList">
+            <h2>{{ post.title }} - ${{ post.userName }}</h2>
+            <p>{{ post.content }}</p>
+            <a [routerLink]="['/post', post.postId]"><button>Edit</button>
+            </a>
+            <button *ngIf="post.postId" (click)="deletePost(post.postId)">Delete</button>
+            <hr>
+        </div>
+    </div>
+</body>

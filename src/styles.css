@@ -1,1 +1,93 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #2f85db;
+  }
+  
+  h1 {
+    color: black;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(239, 234, 234);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    height: 200px;
+    resize: vertical;
+  }
+  
+  button {
+    background-color:#2f85db;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .error-message {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+
+  input, textarea, button {
+    border: 2px solid #2f85db;
+  }
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+nav img {
+    width: 40px;
+    height: auto;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #2f85db;;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: red; /* Blue color on hover */
+}
+
+nav span {
+    margin: 0 10px;
+}

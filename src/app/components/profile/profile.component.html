@@ -1,0 +1,19 @@
+<div class="profile-container">
+    <h2>User Profile</h2>
+    
+    <div class="user-info">
+      <h3>{{ user.firstName }}</h3>
+      <h3>{{ user.lastName }}</h3>
+      <p>Email: {{ user.email }}</p>
+      <p>Bio: {{ user.bio }}</p>
+      <p>Location: {{ user.location }}</p>
+    
+      <!-- User Posts -->
+      <h3>User Posts:</h3>
+      <ul>
+        <li *ngFor="let post of user.posts">{{ post.title }}</li>
+      </ul>
+  
+      <button (click)="editProfile()">Edit Profile</button>
+    </div>
+  </div>

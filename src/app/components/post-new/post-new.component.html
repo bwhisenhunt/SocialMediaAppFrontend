@@ -1,0 +1,13 @@
+<body>
+    <form (ngSubmit)="addPost()">
+        <h1>Create New Post</h1>
+        <span>Post Title</span>
+        <input placeholder="Enter Post Title" type="text" name="post" [(ngModel)]="newPost.title"><br><br>
+        <span>Content</span>
+        <input placeholder="Enter Content" type="text" name="content" [(ngModel)]="newPost.content"><br><br>
+
+        <button>
+            Create Post
+        </button>
+    </form>
+</body>
